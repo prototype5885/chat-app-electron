@@ -16,6 +16,12 @@
         "AppImage"
       ],
       "category": "Chat"
+    },
+    "publish": {
+      "provider": "github",
+      "repo": "chat-app",
+      "owner": "prototype5885",
+      "releaseType": "release"
     }
   },
   "keywords": [],
