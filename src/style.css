@@ -1,0 +1,70 @@
+:root {
+  --main-color: #36393f;
+}
+
+body,
+html {
+  margin: 0;
+  background-color: var(--main-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+#titlebar {
+  height: 24px;
+  background-color: #1E1F22;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  user-select: none;
+}
+
+
+#window-title {
+  width: 100%;
+  -webkit-app-region: drag;
+  color: lightgrey;
+}
+
+#window-title label {
+  padding-left: 8px;
+}
+
+
+#window-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#window-controls button {
+  background: none;
+  border: none;
+  width: 28px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+#window-minimize:hover {
+  background-color: #8080804a;
+}
+
+#window-maximize:hover {
+  background-color: #8080804a;
+}
+
+#window-close:hover {
+  background-color: #ff4747;
+}
+
+
+iframe {
+  border: 0;
+  margin: 0;
+  height: 100%;
+  flex: 1;
+}
