@@ -10,7 +10,13 @@
   },
   "build": {
     "appId": "com.prototype585.chatapp",
-    "productName": "Chat App"
+    "productName": "Chat App",
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Chat"
+    }
   },
   "keywords": [],
   "author": "ProToType",
