@@ -1,5 +1,7 @@
 const { app, BrowserWindow, ipcMain, Menu, Tray } = require('electron')
 
+const autoUpdater = require("electron-updater")
+
 const path = require('path')
 
 let win
@@ -22,6 +24,8 @@ if (gotTheLock) {
 
 
   app.whenReady().then(() => {
+
+    autoUpdater.checkForUpdatesAndNotify()
 
     win = new BrowserWindow({
       width: 1280,
